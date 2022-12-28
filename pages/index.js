@@ -42,7 +42,7 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Create a custom D&D Campaign</h1>
+            <h1>Summon a custom D&D Campaign</h1>
           </div>
           <div className="header-subtitle">
             <h2>Write a new D&D Campaign from scratch! Provide as many (or as few) details as you want in the crafting box. You can choose things like time, place, or character names, or just see what Spellbook comes up with.</h2>
