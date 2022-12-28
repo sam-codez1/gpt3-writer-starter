@@ -45,7 +45,12 @@ const Home = () => {
             <h1>Summon a custom D&D Campaign</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Write a new D&D Campaign from scratch! Provide as many (or as few) details as you want in the crafting box. You can choose things like time, place, or character names, or just see what Spellbook comes up with.</h2>
+            <h2>Give Spellbook a few details, and watch it summon your next campaign. Use the following format to generate your campaign. 
+              <br/>
+              <br/>Title:
+              <br/>Main Characters:
+              <br/>
+              <br/>Spellbook will break up your new adventure into 5 easily digestible quest lines, each intended for its own session. Good luck!</h2>
           </div>
         </div>
         <div className="prompt-container">
