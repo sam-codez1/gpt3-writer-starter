@@ -14,6 +14,7 @@ const Home = () => {
     setIsGenerating(true);
     
     console.log("Calling OpenAI...")
+    console.log(characterInput, titleInput)
     const response = await fetch('/api/generate', {
       method: 'POST',
       headers: {
