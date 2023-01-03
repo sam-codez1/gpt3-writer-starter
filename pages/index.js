@@ -14,22 +14,13 @@ const Home = () => {
     setIsGenerating(true);
     
     console.log("Calling OpenAI...")
-    console.log(characterInput, titleInput)
-
-    const basePromptPrefix =
-    `
-    Write me a new Dungeons and Dragons Campaign using the information below.
-    `
-
-    const prompt = `${basePromptPrefix}\nTitle: ${titleInput}\nCharacter Names: ${characterInput}`
-    console.log(prompt)
-
+    
     const response = await fetch('/api/generate', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ prompt }),
+      body: JSON.stringify({ titleInput, characterInput }),
     });
 
     const data = await response.json();

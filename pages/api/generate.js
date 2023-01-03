@@ -5,17 +5,13 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const basePromptPrefix =
-`
-Write me a new Dungeons and Dragons Campaign using the information below.
-`
+const basePromptPrefix = `Write me a new Dungeons and Dragons Campaign using the information below.`
 
 const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`${basePromptPrefix}`)
 
-  // const first_prompt = `${basePromptPrefix}\nTitle: ${req.body.titleInput}\nCharacter Names: ${req.body.characterInput}`
-  const first_prompt = `${req.body.prompt}` 
+  const first_prompt = `${basePromptPrefix}\nTitle: ${req.body.titleInput}\nMain Characters: ${req.body.characterInput}`
   console.log(`API: ${first_prompt}`)
 
   const baseCompletion = await openai.createCompletion({
