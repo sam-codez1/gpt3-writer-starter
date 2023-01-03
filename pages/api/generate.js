@@ -8,9 +8,6 @@ const openai = new OpenAIApi(configuration);
 const basePromptPrefix =
 `
 Write me a new Dungeons and Dragons Campaign using the information below.
-
-Title:
-Main Characters:
 `
 
 const generateAction = async (req, res) => {
