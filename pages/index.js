@@ -5,7 +5,8 @@ import { useState } from 'react';
 
 
 const Home = () => {
-  const [userInput, setUserInput] = useState('');
+  const [titleInput, setTitleInput] = useState('');
+  const [characterInput, setCharacterInput] = useState('');
   const [apiOutput, setApiOutput] = useState('')
   const [isGenerating, setIsGenerating] = useState(false)
 
@@ -18,7 +19,7 @@ const Home = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ titleInput }),
+      body: JSON.stringify({ titleInput, charactersInput }),
     });
 
     const data = await response.json();
@@ -29,9 +30,12 @@ const Home = () => {
     setIsGenerating(false);
   }
 
-  const onUserChangedText = (event) => {
-    console.log(event.target.value);
-    setUserInput(event.target.value);
+  const onTitleChangedText = (event) => {
+    setTitleInput(event.target.value);
+  };
+
+  const onCharacterChangedText = (event) => {
+    setCharacterInput(event.target.value);
   };
 
   return (
@@ -58,14 +62,14 @@ const Home = () => {
             className="prompt-box" 
             placeholder="Campaign Title"
             value={titleInput}
-            onChange={onUserChangedText}
+            onChange={onTitleChangedText}
           />;
-          {/* <textarea 
+          <textarea 
             className="prompt-box" 
             placeholder="Character Names"
-            value={characterNameInput}
-            onChange={onUserChangedText}
-          />; */}
+            value={characterInput}
+            onChange={onCharacterChangedText}
+          />;
           <div className="prompt-buttons">
             <a
             className={isGenerating ? 'generate-button loading' : 'generate-button'}
