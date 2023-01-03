@@ -12,7 +12,7 @@ Write me a new Dungeons and Dragons Campaign using the information below.
 
 const generateAction = async (req, res) => {
   // Run first prompt
-  console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
+  console.log(`API: ${basePromptPrefix}${req.body.titleInput}`)
 
   first_prompt = `${basePromptPrefix}\nTitle:${req.body.titleInput}\nCharacter Names:${req.body.characterNameinput}`
   console.log(`API: ${first_prompt}`)

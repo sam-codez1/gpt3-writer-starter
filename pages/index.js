@@ -18,7 +18,7 @@ const Home = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ titleUserInput, characterNameInput }),
+      body: JSON.stringify({ titleInput, characterNameInput }),
     });
 
     const data = await response.json();
