@@ -18,7 +18,7 @@ const Home = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ titleInput, characterNameInput }),
+      body: JSON.stringify({ titleInput }),
     });
 
     const data = await response.json();
@@ -60,12 +60,12 @@ const Home = () => {
             value={titleInput}
             onChange={onUserChangedText}
           />;
-          <textarea 
+          {/* <textarea 
             className="prompt-box" 
             placeholder="Character Names"
             value={characterNameInput}
             onChange={onUserChangedText}
-          />;
+          />; */}
           <div className="prompt-buttons">
             <a
             className={isGenerating ? 'generate-button loading' : 'generate-button'}
