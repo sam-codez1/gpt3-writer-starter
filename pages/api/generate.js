@@ -14,7 +14,7 @@ const generateAction = async (req, res) => {
   // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.titleInput}`)
 
-  first_prompt = `${basePromptPrefix}\nTitle:${req.body.titleInput}\nCharacter Names:${req.body.characterNameinput}`
+  first_prompt = `${basePromptPrefix}\nTitle:${req.body.titleInput}\nCharacter Names:${req.body.characterInput}`
   console.log(`API: ${first_prompt}`)
 
   const baseCompletion = await openai.createCompletion({
