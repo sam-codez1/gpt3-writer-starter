@@ -18,7 +18,7 @@ const Home = () => {
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ userInput }),
+      body: JSON.stringify({ titleUserInput, characterNameInput }),
     });
 
     const data = await response.json();
@@ -56,8 +56,14 @@ const Home = () => {
         <div className="prompt-container">
           <textarea 
             className="prompt-box" 
-            placeholder="start typing here"
-            value={userInput}
+            placeholder="Campaign Title"
+            value={titleInput}
+            onChange={onUserChangedText}
+          />;
+          <textarea 
+            className="prompt-box" 
+            placeholder="Character Names"
+            value={characterNameInput}
             onChange={onUserChangedText}
           />;
           <div className="prompt-buttons">
