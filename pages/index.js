@@ -52,9 +52,6 @@ const Home = () => {
           <div className="header-subtitle">
             <h2>Give Spellbook a few details, and watch it summon your next campaign. Use the following format to generate your campaign. 
               <br/>
-              <br/>Title:
-              <br/>Main Characters:
-              <br/>
               <br/>Spellbook will break up your new adventure into 5 easily digestible quest lines, each intended for its own session. Good luck!</h2>
           </div>
         </div>
