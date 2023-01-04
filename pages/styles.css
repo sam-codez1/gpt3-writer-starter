@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-image: url("https://lexica-serve-encoded-images2.sharif.workers.dev/md/60ed3ca0-8fd7-4943-be40-fd6277aaeae3");
+    background-image: radial-gradient(navy, white, black);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
