@@ -58,13 +58,13 @@ const Home = () => {
         <div className="prompt-container">
           <textarea 
             className="prompt-box" 
-            placeholder="Campaign Title"
+            placeholder="Your Campaign Title:"
             value={titleInput}
             onChange={onTitleChangedText}
           />;
           <textarea 
             className="prompt-box" 
-            placeholder="Main Character Names"
+            placeholder="Main Character Names:"
             value={characterInput}
             onChange={onCharacterChangedText}
           />;
