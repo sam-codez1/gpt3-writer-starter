@@ -64,7 +64,7 @@ const Home = () => {
           />;
           <textarea 
             className="prompt-box" 
-            placeholder="Character Names"
+            placeholder="Main Character Names"
             value={characterInput}
             onChange={onCharacterChangedText}
           />;
@@ -94,7 +94,7 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href="https://www.youtube.com/watch?v=Vr2YdvKo6sI"
           target="_blank"
           rel="noreferrer"
         >
