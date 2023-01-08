@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
 
   const secondPrompt =
   `
-  Take the Dungeons and Dragons Campaign below and generate 5 quest lines. Make them feel like an RPG. Go into detail with each one, including a Boss fight and the rewards for the party.
+  Take the Dungeons and Dragons Campaign below and generate 5 quest lines. Make them feel like an RPG. Go deep into detail with each one, including a Boss fight and the rewards for the party. Make sure to mention the names of the main characters a few times.
   Make sure every quest leads into the next quest to create a single overarching story.
   
   Dungeons and Dragons Campaign: ${basePromptOutput.text}
