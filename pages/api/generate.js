@@ -5,7 +5,7 @@ const configuration = new Configuration({
 });
 
 const openai = new OpenAIApi(configuration);
-const basePromptPrefix = `Write me a new Dungeons and Dragons Campaign using the information below.`
+const basePromptPrefix = `Write me a new Dungeons and Dragons Campaign using the following Title and Main Characters.`
 
 const generateAction = async (req, res) => {
   // Run first prompt
@@ -17,7 +17,7 @@ const generateAction = async (req, res) => {
   const baseCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
     prompt: first_prompt,
-    temperature: 1.0,
+    temperature: 0.6,
     max_tokens: 1000,
   });
   
@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
 
   const secondPrompt =
   `
-  Take the Dungeons and Dragons Campaign below and generate 5 quest lines. Make them feel like an RPG. Go into detail with each one.
+  Take the Dungeons and Dragons Campaign below and generate 5 quest lines. Make them feel like an RPG. Go into detail with each one, including a Boss fight and the rewards for the party.
   Make sure every quest leads into the next quest to create a single overarching story.
   
   Dungeons and Dragons Campaign: ${basePromptOutput.text}
