@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-image: radial-gradient(black, navy, blue);
+    background-image: radial-gradient(black, navy, navy);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

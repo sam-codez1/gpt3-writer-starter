@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
+import spellbookLogo from '../assets/spellbook-logo.png';
 import { useState } from 'react';
 
 
@@ -99,7 +99,7 @@ const Home = () => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
+            <Image src={spellbookLogo} alt="spellbook logo" />
             <p>Spellbook</p>
           </div>
         </a>
