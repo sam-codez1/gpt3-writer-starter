@@ -8,7 +8,7 @@ export default function Document() {
         <meta property="og:description" content="summon your next campaign" key="description"/>
         <meta
           property="og:image"
-          content="https://lexica.art/prompt/08d69408-1429-40cb-bbf5-e3d2599ef526"
+          content="https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/0da3158e-5599-48cc-bfd6-fc67c09e642c"
         />
         <meta name="twitter:card" content="summary_large_image"></meta>
       </Head>
