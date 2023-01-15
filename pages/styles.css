@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 .root {
@@ -302,7 +302,7 @@ textarea {
 }
 
 .output-header h3 {
-    font-family: "Manrope", serif;
+    font-family: "Outfit", serif;
     font-size: 28px;
     font-style: normal;
     font-weight: 800;
