@@ -47,12 +47,13 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Summon a custom D&D Campaign</h1>
+            <h1>Summon a new Campaign</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Give Spellbook a few details, and watch it summon your next campaign. Use the following format to generate your campaign. 
+            <h2>Type in a name for your adventure ("Finding the Golden Sword", etc) and the names of your party members.
               <br/>
-              <br/>Spellbook will break up your new adventure into 5 easily digestible quest lines, each intended for its own session. Good luck!</h2>
+              <br/>Spellbook uses this info to generate 5 sequential questlines, each with its own boss and loot. Good luck!
+              </h2>
           </div>
         </div>
         <div className="prompt-container">
@@ -82,7 +83,7 @@ const Home = () => {
           <div className="output">
             <div className="output-header-container">
               <div className="output-header">
-                <h3>Output</h3>
+                <h3>Your Quests:</h3>
               </div>
             </div>
             <div className="output-content">
