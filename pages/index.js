@@ -62,13 +62,13 @@ const Home = () => {
             placeholder="Your Campaign Title:"
             value={titleInput}
             onChange={onTitleChangedText}
-          />;
+          />
           <textarea 
             className="prompt-box" 
             placeholder="Main Character Names:"
             value={characterInput}
             onChange={onCharacterChangedText}
-          />;
+          />
           <div className="prompt-buttons">
             <a
             className={isGenerating ? 'generate-button loading' : 'generate-button'}
