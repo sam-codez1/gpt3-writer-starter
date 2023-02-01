@@ -52,7 +52,7 @@ const Home = () => {
           <div className="header-subtitle">
             <h2>Type in a name for your adventure ("Finding the Golden Sword", etc) and the names of your party members.
               <br/>
-              <br/>Spellbook uses this info to generate 5 sequential questlines, each with its own boss and loot. Good luck!
+              <br/>Spellbook uses this info to generate your custom questline with its own unique boss and loot. Good luck!
               </h2>
           </div>
         </div>
