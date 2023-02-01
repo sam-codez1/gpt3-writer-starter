@@ -50,9 +50,9 @@ const Home = () => {
             <h1>Summon a new Campaign</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Type in a name for your adventure ("Finding the Golden Sword", etc) and the names of your party members.
+            <h2>Create a title for your adventure ("Defeating the Golden Dragon", "Save the Kingdom of Mordor, etc") and fill in the names of your party members.
               <br/>
-              <br/>Spellbook uses this info to generate your custom questline with its own unique boss and loot. Good luck!
+              <br/>Spellbook uses this info to generate a custom questline, complete with a unique boss and loot. Good luck!
               </h2>
           </div>
         </div>
@@ -83,7 +83,7 @@ const Home = () => {
           <div className="output">
             <div className="output-header-container">
               <div className="output-header">
-                <h3>Your Quests:</h3>
+                <h3>Your Campaign:</h3>
               </div>
             </div>
             <div className="output-content">
