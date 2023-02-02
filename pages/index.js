@@ -95,7 +95,7 @@ const Home = () => {
       </div>
       <div className="badge-container grow">
         <a
-          href="https://www.youtube.com/watch?v=Vr2YdvKo6sI"
+          href="https://spellbook.framer.website/"
           target="_blank"
           rel="noreferrer"
         >
