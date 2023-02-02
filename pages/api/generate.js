@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
 
   const secondPrompt =
   `
-  Take the Dungeons and Dragons Campaign below and add details for the Boss. Make sure to include a name and a few special abilities. At the bottom add a unique fantasy world reward for each Main Character. 
+  Print the Dungeons and Dragons Campaign below, adding details for the Boss. Make sure to include a name and a few special abilities. At the bottom of the campaign add a unique enchanted item for each Main Character as a reward for defeating the Boss.
   
   Dungeons and Dragons Campaign: ${basePromptOutput.text}
   `
