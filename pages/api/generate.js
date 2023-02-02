@@ -25,17 +25,15 @@ const generateAction = async (req, res) => {
 
   const secondPrompt =
   `
-  Take the Dungeons and Dragons Campaign below and generate a main quest line. Make it feel like an RPG. Elaborate and create more details and characters, including a Boss with a name and specific, special abilities. Make sure to mention the names of the main characters a few times, and provide a unique reward for each main character.
-  Make sure the quest line is a cohesive story.
+  Take the Dungeons and Dragons Campaign below and make it feel like an RPG. Elaborate and create more details and characters, including a Boss with a name and specific, special abilities. Make sure to mention the names of the main characters a few times, and provide a unique reward for each main character.
+  Make sure the it is a cohesive story.
   
   Dungeons and Dragons Campaign: ${basePromptOutput.text}
-
-  Quests:
   `
   const secondPromptCompletion = await openai.createCompletion({
     model: 'text-davinci-003',
     prompt: `${secondPrompt}`,
-    temperature: 0.9,
+    temperature: 0.6,
     max_tokens: 1000,
   });
 
