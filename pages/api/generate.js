@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
 
   const secondPrompt =
   `
-  Output the entire Dungeons and Dragons Campaign below. Add some details for the Boss including a name and a few special abilities. At the bottom of the campaign add a unique enchanted item for each Main Character as a reward for defeating the Boss.
+  Copy and paste the entire Dungeons and Dragons Campaign below. Add some details for the Boss including a name and a few special abilities. At the bottom of the campaign add a unique enchanted item for each Main Character as a reward for defeating the Boss.
   
   Dungeons and Dragons Campaign: ${basePromptOutput.text}
   `
