@@ -25,7 +25,7 @@ const generateAction = async (req, res) => {
 
   const secondPrompt =
   `
-  Take the Dungeons and Dragons Campaign below and elaborate and create more details and characters, including a Boss with a name and specific, special abilities. Make sure to mention the names of the main characters a few times, and provide a unique reward for each main character.
+  Take the Dungeons and Dragons Campaign below and elaborate on the enemies, including a Boss with a name and specific, special abilities. Make sure to mention the names of the main characters a few times, and provide a unique reward for each main character.
   Make sure the it is a cohesive story.
   
   Dungeons and Dragons Campaign: ${basePromptOutput.text}
