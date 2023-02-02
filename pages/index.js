@@ -50,7 +50,7 @@ const Home = () => {
             <h1>Summon a new Campaign</h1>
           </div>
           <div className="header-subtitle">
-            <h2>Create a title for your adventure ("Defeating the Golden Dragon", "Save the Kingdom of Mordor, etc") and fill in the names of your party members.
+            <h2>Create a title for your adventure ("Defeating the Golden Dragon", "Saving the Elder Wizard", etc) and fill in the names of your party members.
               <br/>
               <br/>Spellbook uses this info to generate a custom questline, complete with a unique boss and loot. Good luck!
               </h2>
