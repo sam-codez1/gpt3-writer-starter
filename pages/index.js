@@ -75,7 +75,7 @@ const Home = () => {
             onClick={callGenerateEndpoint}
             >
               <div className="generate">
-              {isGenerating ? <span className="loader"></span> : <p>Generate</p>}
+              {isGenerating ? <span className="loader"></span> : <p>GENERATE</p>}
               </div>
             </a>
           </div>
